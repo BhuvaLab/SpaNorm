@@ -1,3 +1,6 @@
+# Slow (minutes): skipped on the Bioconductor builders to stay under the 40 min check limit.
+testthat::skip_on_bioc()
+
 # ls = "joint": the pooled, profiled Newton step on SpaNorm's shared
 # library-size coefficient (R/polishSpaNormJoint.R; spec section 4).
 

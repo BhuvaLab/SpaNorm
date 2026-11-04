@@ -1,3 +1,6 @@
+# Slow (minutes): skipped on the Bioconductor builders to stay under the 40 min check limit.
+testthat::skip_on_bioc()
+
 # nbBlockDesign(): a design whose per-group block is held in compact form (one
 # n x q matrix and a group per cell) and absorbed group by group, never built
 # as the dense n x (p_x + G q) matrix.

@@ -1,3 +1,6 @@
+# Slow (minutes): skipped on the Bioconductor builders to stay under the 40 min check limit.
+testthat::skip_on_bioc()
+
 test_that("fitSpaNormNB internal function checks works", {
   set.seed(36)
   emat = matrix(rpois(6 * 4e3, 10), 6, 4e3)

@@ -1,3 +1,6 @@
+# Slow (minutes): skipped on the Bioconductor builders to stay under the 40 min check limit.
+testthat::skip_on_bioc()
+
 # Tests for fitNB()/calculateMu()'s fixed `offset` argument.
 #
 # The offset enters the linear predictor with a coefficient pinned at 1:
