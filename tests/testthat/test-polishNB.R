@@ -1,3 +1,6 @@
+# Slow (minutes): skipped on the Bioconductor builders to stay under the 40 min check limit.
+testthat::skip_on_bioc()
+
 # polishNB(): the driver that converges every gene of a shared fitNB() fit to
 # that gene's own penalised-NB optimum, moved from spiDE's .polishFit().
 

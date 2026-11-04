@@ -1,3 +1,6 @@
+# Slow (minutes): skipped on the Bioconductor builders to stay under the 40 min check limit.
+testthat::skip_on_bioc()
+
 test_that("tps function works", {
   expect_error(bs.tps(1:4, 1:4, 0), "greater")
   expect_error(bs.tps(1:4, 1:4, -1), "greater")

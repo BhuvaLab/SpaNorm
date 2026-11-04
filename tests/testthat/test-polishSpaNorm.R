@@ -1,3 +1,6 @@
+# Slow (minutes): skipped on the Bioconductor builders to stay under the 40 min check limit.
+testthat::skip_on_bioc()
+
 test_that("the polished fit is at each gene's optimum with a1 held", {
   # tol is the relative log-likelihood gain at which Newton stops. At the
   # default 1e-8 the score is left at up to 2.1e-6 * sum(y) on this fixture

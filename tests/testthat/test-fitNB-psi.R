@@ -1,3 +1,6 @@
+# Slow (minutes): skipped on the Bioconductor builders to stay under the 40 min check limit.
+testthat::skip_on_bioc()
+
 # Tests for fitNB()'s supplied-dispersion (`psi`) passthrough.
 #
 # With psi supplied, the outer dispersion loop is bypassed entirely: no
