@@ -73,6 +73,7 @@ jobs:
             any::rmarkdown
             any::patchwork
             any::remotes
+            any::desc
             bioc::zellkonverter
             bioc::scater
             local::.
