@@ -102,7 +102,7 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-cf5f31320af5f96e0014730db103727b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0ce8976a51ffdc7eb68658da8f3b221b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-db58a38ba4dd13ee506cee0789cf636d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -807,7 +807,7 @@ window.Quarto = {
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># scalars of the fit and the per-gene coefficients</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>({k: v <span class="cf">for</span> k, v <span class="kw">in</span> adata.uns[<span class="st">"spanorm"</span>].items() <span class="cf">if</span> np.ndim(v) <span class="op">==</span> <span class="dv">0</span>})</span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; {'spanorm': {'ngenes': 2508, 'ncells': 4015, 'gene_model': 'nb', 'df_tps': array([2, 2, 1, 1]), 'sample_p': 0.05, 'lambda_a': array([0.0001, 0.0001]), 'wtype': array(['ls', 'biology', 'biology', 'biology', 'biology', 'ls'],</span></span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;       dtype='&lt;U7'), 'loglik': array([-499834.23568236, -499488.55420576, -499487.71443846]), 'psi_max': 0.13419746539185973, 'batch': {'kind': 'none'}, 'colnames': array(['logLS', 'bs.xy.bio1', 'bs.xy.bio2', 'bs.xy.bio3', 'bs.xy.bio4',</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;       dtype='&lt;U7'), 'loglik': array([-499834.23568236, -499488.55420576, -499487.71443846]), 'psi_max': 0.13419746539192612, 'batch': {'kind': 'none'}, 'colnames': array(['logLS', 'bs.xy.bio1', 'bs.xy.bio2', 'bs.xy.bio3', 'bs.xy.bio4',</span></span>
 <span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;        'logLS:bs.xy.ls'], dtype='&lt;U14')}, 'adj_method': 'auto'}</span></span>
 <span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(adata.varm.keys(), adata.obsm.keys())</span>
 <span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; KeysView(AxisArrays with keys: 'spanorm_alpha') KeysView(AxisArrays with keys: 'spatial', 'spanorm_W')</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -938,7 +938,7 @@ window.Quarto = {
 <span id="cb23-18"><a href="#cb23-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; iter:  2, log-likelihood: -462978.681588</span></span>
 <span id="cb23-19"><a href="#cb23-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; iter:  2, fitting NB model</span></span>
 <span id="cb23-20"><a href="#cb23-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; iter:  2, iter:  1, log-likelihood: -462978.681588</span></span>
-<span id="cb23-21"><a href="#cb23-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; iter:  2, iter:  2, log-likelihood: -462390.407666</span></span>
+<span id="cb23-21"><a href="#cb23-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; iter:  2, iter:  2, log-likelihood: -462390.407667</span></span>
 <span id="cb23-22"><a href="#cb23-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; iter:  2, iter:  3, log-likelihood: -462363.836449 (converged)</span></span>
 <span id="cb23-23"><a href="#cb23-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; iter:  3, estimating gene-wise dispersion</span></span>
 <span id="cb23-24"><a href="#cb23-24" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; iter:  3, log-likelihood: -462362.154987</span></span>
@@ -1199,7 +1199,7 @@ log \mu_{c,g} = \varsigma_{g} + \{\alpha + h_g(x_c, y_c;\gamma_g)\}logLS_c
 <div class="cell-output-display">
 <div data-pagedtable="false">
   <script data-pagedtable-source="" type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["svg.F"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["svg.p"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["svg.fdr"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"83.59842","2":"0.000000e+00","3":"0.000000e+00","_rn_":"SCGB2A2"},{"1":"47.47278","2":"1.162190e-276","3":"1.457386e-273","_rn_":"SCGB1D2"},{"1":"38.19979","2":"1.355311e-225","3":"1.133040e-222","_rn_":"MBP"},{"1":"33.45067","2":"2.607656e-198","3":"1.635000e-195","_rn_":"SAA1"},{"1":"26.31590","2":"8.216448e-156","3":"4.121370e-153","_rn_":"TMSB10"},{"1":"25.73499","2":"2.855357e-152","3":"1.193539e-149","_rn_":"CARTPT"},{"1":"24.07557","2":"4.337022e-142","3":"1.553893e-139","_rn_":"MGP"},{"1":"20.04347","2":"6.018411e-117","3":"1.886772e-114","_rn_":"COX6C"},{"1":"19.17273","2":"1.910271e-111","3":"5.323290e-109","_rn_":"HPCAL1"},{"1":"18.99644","2":"2.499713e-110","3":"6.269279e-108","_rn_":"KRT8"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["svg.F"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["svg.p"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["svg.fdr"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"83.59842","2":"0.000000e+00","3":"0.000000e+00","_rn_":"SCGB2A2"},{"1":"47.47278","2":"1.162190e-276","3":"1.457386e-273","_rn_":"SCGB1D2"},{"1":"38.19979","2":"1.355311e-225","3":"1.133040e-222","_rn_":"MBP"},{"1":"33.45067","2":"2.607656e-198","3":"1.635000e-195","_rn_":"SAA1"},{"1":"26.31590","2":"8.216448e-156","3":"4.121370e-153","_rn_":"TMSB10"},{"1":"25.73499","2":"2.855357e-152","3":"1.193539e-149","_rn_":"CARTPT"},{"1":"24.07557","2":"4.337023e-142","3":"1.553893e-139","_rn_":"MGP"},{"1":"20.04347","2":"6.018411e-117","3":"1.886772e-114","_rn_":"COX6C"},{"1":"19.17273","2":"1.910271e-111","3":"5.323290e-109","_rn_":"HPCAL1"},{"1":"18.99644","2":"2.499713e-110","3":"6.269279e-108","_rn_":"KRT8"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 </div>
@@ -1434,11 +1434,11 @@ log \mu_{c,g} = \varsigma_{g} + \{\alpha + h_g(x_c, y_c;\gamma_g)\}logLS_c
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span>
 <span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; R version 4.6.2 (2026-10-29)</span></span>
 <span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Platform: x86_64-pc-linux-gnu</span></span>
-<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Running under: Ubuntu 24.04.5 LTS</span></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Running under: Ubuntu 26.04.1 LTS</span></span>
 <span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
 <span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Matrix products: default</span></span>
 <span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; BLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3 </span></span>
-<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.26.so;  LAPACK version 3.12.0</span></span>
+<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.32.so;  LAPACK version 3.12.0</span></span>
 <span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
 <span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; locale:</span></span>
 <span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       </span></span>
@@ -1459,40 +1459,36 @@ log \mu_{c,g} = \varsigma_{g} + \{\alpha + h_g(x_c, y_c;\gamma_g)\}logLS_c
 <span id="cb41-26"><a href="#cb41-26" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [5] SummarizedExperiment_1.43.0 Biobase_2.73.2             </span></span>
 <span id="cb41-27"><a href="#cb41-27" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [7] GenomicRanges_1.65.4        Seqinfo_1.3.2              </span></span>
 <span id="cb41-28"><a href="#cb41-28" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [9] IRanges_2.47.5              S4Vectors_0.51.10          </span></span>
-<span id="cb41-29"><a href="#cb41-29" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [11] BiocGenerics_0.59.12        generics_0.1.4             </span></span>
+<span id="cb41-29"><a href="#cb41-29" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [11] BiocGenerics_0.59.13        generics_0.1.4             </span></span>
 <span id="cb41-30"><a href="#cb41-30" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [13] MatrixGenerics_1.25.0       matrixStats_1.5.0          </span></span>
-<span id="cb41-31"><a href="#cb41-31" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [15] patchwork_1.3.2             ggplot2_4.0.3              </span></span>
+<span id="cb41-31"><a href="#cb41-31" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [15] patchwork_1.3.2             ggplot2_4.0.4              </span></span>
 <span id="cb41-32"><a href="#cb41-32" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [17] SpaNorm_1.7.17             </span></span>
 <span id="cb41-33"><a href="#cb41-33" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
 <span id="cb41-34"><a href="#cb41-34" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; loaded via a namespace (and not attached):</span></span>
 <span id="cb41-35"><a href="#cb41-35" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [1] tidyselect_1.2.1    viridisLite_0.4.3   dplyr_1.2.1        </span></span>
 <span id="cb41-36"><a href="#cb41-36" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [4] vipor_0.4.7         farver_2.1.2        viridis_0.6.5      </span></span>
-<span id="cb41-37"><a href="#cb41-37" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [7] S7_0.2.2            fastmap_1.2.0       bluster_1.23.1     </span></span>
+<span id="cb41-37"><a href="#cb41-37" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [7] S7_1.0.0            fastmap_1.2.0       bluster_1.23.1     </span></span>
 <span id="cb41-38"><a href="#cb41-38" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [10] digest_0.6.39       rsvd_2.0.0          lifecycle_1.0.5    </span></span>
-<span id="cb41-39"><a href="#cb41-39" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [13] cluster_2.1.8.3     processx_3.9.0      statmod_1.5.2      </span></span>
-<span id="cb41-40"><a href="#cb41-40" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [16] magrittr_2.0.5      compiler_4.6.2      rlang_1.3.0        </span></span>
-<span id="cb41-41"><a href="#cb41-41" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [19] tools_4.6.2         igraph_2.3.4        yaml_2.3.12        </span></span>
-<span id="cb41-42"><a href="#cb41-42" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [22] FNN_1.1.4.1         knitr_1.52          S4Arrays_1.13.2    </span></span>
-<span id="cb41-43"><a href="#cb41-43" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [25] labeling_0.4.3      dqrng_0.4.1         htmlwidgets_1.6.4  </span></span>
-<span id="cb41-44"><a href="#cb41-44" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [28] bit_4.6.0           reticulate_1.47.0   DelayedArray_0.39.8</span></span>
-<span id="cb41-45"><a href="#cb41-45" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [31] RColorBrewer_1.1-3  abind_1.4-8         BiocParallel_1.47.0</span></span>
-<span id="cb41-46"><a href="#cb41-46" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [34] withr_3.0.3         grid_4.6.2          beachmat_2.29.3    </span></span>
-<span id="cb41-47"><a href="#cb41-47" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [37] edgeR_4.99.10       scales_1.4.0        cli_3.6.6          </span></span>
-<span id="cb41-48"><a href="#cb41-48" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [40] rmarkdown_2.32      metapod_1.21.0      otel_0.2.0         </span></span>
-<span id="cb41-49"><a href="#cb41-49" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [43] RSpectra_0.16-2     rjson_0.2.23        ggbeeswarm_0.7.3   </span></span>
-<span id="cb41-50"><a href="#cb41-50" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [46] splines_4.6.2       parallel_4.6.2      XVector_0.53.0     </span></span>
-<span id="cb41-51"><a href="#cb41-51" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [49] coro_1.1.0          vctrs_0.7.3         Matrix_1.7-6       </span></span>
-<span id="cb41-52"><a href="#cb41-52" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [52] jsonlite_2.0.0      callr_3.8.0         BiocSingular_1.29.2</span></span>
-<span id="cb41-53"><a href="#cb41-53" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [55] BiocNeighbors_2.7.3 bit64_4.8.6         ggrepel_0.9.8      </span></span>
-<span id="cb41-54"><a href="#cb41-54" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [58] irlba_2.4.1         beeswarm_0.4.0      magick_2.9.1       </span></span>
-<span id="cb41-55"><a href="#cb41-55" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [61] locfit_1.5-9.12     limma_3.99.3        glue_1.8.1         </span></span>
-<span id="cb41-56"><a href="#cb41-56" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [64] ps_1.9.3            codetools_0.2-20    cowplot_1.2.0      </span></span>
-<span id="cb41-57"><a href="#cb41-57" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [67] uwot_0.2.5          gtable_0.3.6        ScaledMatrix_1.21.0</span></span>
-<span id="cb41-58"><a href="#cb41-58" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [70] tibble_3.3.1        pillar_1.11.1       htmltools_0.5.9    </span></span>
-<span id="cb41-59"><a href="#cb41-59" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [73] torch_0.17.0        R6_2.6.1            evaluate_1.0.5     </span></span>
-<span id="cb41-60"><a href="#cb41-60" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [76] lattice_0.23-1      png_0.1-9           scran_1.41.1       </span></span>
-<span id="cb41-61"><a href="#cb41-61" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [79] Rcpp_1.1.2          gridExtra_2.3.1     SparseArray_1.13.4 </span></span>
-<span id="cb41-62"><a href="#cb41-62" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [82] xfun_0.62           pkgconfig_2.0.3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb41-39"><a href="#cb41-39" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [13] cluster_2.1.8.3     statmod_1.5.2       magrittr_2.0.5     </span></span>
+<span id="cb41-40"><a href="#cb41-40" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [16] compiler_4.6.2      rlang_1.3.0         tools_4.6.2        </span></span>
+<span id="cb41-41"><a href="#cb41-41" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [19] igraph_2.3.4        yaml_2.3.12         knitr_1.52         </span></span>
+<span id="cb41-42"><a href="#cb41-42" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [22] FNN_1.1.4.1         S4Arrays_1.13.3     labeling_0.4.3     </span></span>
+<span id="cb41-43"><a href="#cb41-43" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [25] dqrng_0.4.1         reticulate_1.47.0   DelayedArray_0.39.8</span></span>
+<span id="cb41-44"><a href="#cb41-44" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [28] RColorBrewer_1.1-3  abind_1.4-8         BiocParallel_1.47.0</span></span>
+<span id="cb41-45"><a href="#cb41-45" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [31] withr_3.0.3         grid_4.6.2          beachmat_2.29.3    </span></span>
+<span id="cb41-46"><a href="#cb41-46" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [34] edgeR_4.99.15       scales_1.4.0        cli_3.6.6          </span></span>
+<span id="cb41-47"><a href="#cb41-47" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [37] rmarkdown_2.32      metapod_1.21.1      RSpectra_0.16-2    </span></span>
+<span id="cb41-48"><a href="#cb41-48" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [40] rjson_0.2.23        ggbeeswarm_0.7.3    splines_4.6.2      </span></span>
+<span id="cb41-49"><a href="#cb41-49" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [43] parallel_4.6.2      XVector_0.53.0      vctrs_0.7.3        </span></span>
+<span id="cb41-50"><a href="#cb41-50" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [46] Matrix_1.7-6        jsonlite_2.0.0      BiocSingular_1.29.3</span></span>
+<span id="cb41-51"><a href="#cb41-51" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [49] BiocNeighbors_2.7.3 ggrepel_0.9.8       irlba_2.4.1        </span></span>
+<span id="cb41-52"><a href="#cb41-52" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [52] beeswarm_0.4.0      magick_2.9.1        limma_3.99.5       </span></span>
+<span id="cb41-53"><a href="#cb41-53" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [55] glue_1.8.1          codetools_0.2-20    uwot_0.2.5         </span></span>
+<span id="cb41-54"><a href="#cb41-54" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [58] gtable_0.3.6        ScaledMatrix_1.21.0 tibble_3.3.1       </span></span>
+<span id="cb41-55"><a href="#cb41-55" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [61] pillar_1.11.1       htmltools_0.5.9     R6_2.6.1           </span></span>
+<span id="cb41-56"><a href="#cb41-56" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [64] evaluate_1.0.5      lattice_0.23-1      png_0.1-9          </span></span>
+<span id="cb41-57"><a href="#cb41-57" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [67] scran_1.41.1        Rcpp_1.1.2          gridExtra_2.3.1    </span></span>
+<span id="cb41-58"><a href="#cb41-58" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [70] SparseArray_1.13.5  xfun_0.62           pkgconfig_2.0.3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 <div id="tabset-22-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-22-2-tab">
@@ -1504,8 +1500,8 @@ log \mu_{c,g} = \varsigma_{g} + \{\alpha + h_g(x_c, y_c;\gamma_g)\}logLS_c
 <span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(p, im.version(p))</span>
 <span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; spanormpy 0.1.0</span></span>
 <span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; anndata 0.13.4</span></span>
-<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; scanpy 1.12.5</span></span>
-<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; numpy 2.5.4</span></span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; scanpy 1.12.6</span></span>
+<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; numpy 2.5.5</span></span>
 <span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; torch 2.15.0+cpu</span></span>
 <span id="cb42-11"><a href="#cb42-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; matplotlib 3.11.2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
